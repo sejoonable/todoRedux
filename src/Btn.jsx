@@ -1,4 +1,8 @@
-const CANCELBTN = ({CancelBTN, item}) => {
+  const CHOOGABTN = ({choogaBTN}) => {
+    return <button onClick={choogaBTN}>추가</button>
+  }
+
+  const CANCELBTN = ({CancelBTN, item}) => {
     return <button onClick={() => CancelBTN(item)}>취소</button>
   }
   
@@ -10,4 +14,4 @@ const CANCELBTN = ({CancelBTN, item}) => {
     return <button onClick={() => DoneBTN(item)}>완료</button>
   }
 
-  export { CANCELBTN, DELETEBTN, DONEBTN }
+  export { CHOOGABTN, CANCELBTN, DELETEBTN, DONEBTN }
