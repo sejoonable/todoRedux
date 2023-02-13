@@ -35,6 +35,7 @@ function Detail() {
       제목 : {detail.jaemok}
       <br />
       내용 : {detail.naeyong}
+      <br />
       <Link to="/">이전으로</Link>
     </STBOX>
   </KING>
