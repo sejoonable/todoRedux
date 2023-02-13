@@ -54,11 +54,13 @@ function Home() {
 
   const choogaBTN = () => {
     const newBOX = { id: Math.random(), jaemok, naeyong, isDone: false }
+        if (jaemok !== '') {
+           console.log(TodoBOXES)
+    dispatch({type : "choogaBTN", newBOX:newBOX})
+        }
     // setTodoBOXES([...TodoBOXES, newBOX])
     // setjaemok("")
     // setnaeyong("")
-    console.log(TodoBOXES)
-    dispatch({type : "choogaBTN", newBOX:newBOX})
   }
   const DoneBTN = (item) => {
     const thisBOX = TodoBOXES.filter(v => v.id === item.id)
